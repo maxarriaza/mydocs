@@ -3,7 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "nx build"
+    "lint": "nx lint",
+    "lint:affected": "nx affected --target=lint",
+    "test": "nx test",
+    "test:affected": "nx affected --target=test",
+    "build": "nx build",
+    "build:affected": "nx affected --target=build"
   },
   "private": true,
   "devDependencies": {
